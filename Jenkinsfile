@@ -42,19 +42,8 @@ pipeline {
     }
 
     stage('Test') {
-      parallel {
-        stage('Test') {
-          steps {
-            echo 'Testing'
-          }
-        }
-
-        stage('step5') {
-          steps {
-            sh 'echo "setp is running"'
-          }
-        }
-
+      steps {
+        echo 'Testing'
       }
     }
 
