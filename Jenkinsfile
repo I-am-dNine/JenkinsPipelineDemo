@@ -57,7 +57,7 @@ pipeline {
 
         stage('gradle') {
           steps {
-            sh 'echo "tesh sh"'
+            sleep 5
           }
         }
 
