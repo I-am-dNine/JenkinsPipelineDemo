@@ -36,19 +36,8 @@ pipeline {
     }
 
     stage('Deploy') {
-      parallel {
-        stage('Deploy') {
-          steps {
-            echo 'Deploying'
-          }
-        }
-
-        stage('step4') {
-          steps {
-            timestamps()
-          }
-        }
-
+      steps {
+        echo 'Deploying'
       }
     }
 
