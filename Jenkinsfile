@@ -57,7 +57,7 @@ pipeline {
 
         stage('gradle') {
           steps {
-            withGradle()
+            sh 'echo "tesh sh"'
           }
         }
 
